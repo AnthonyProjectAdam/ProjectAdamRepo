@@ -7,7 +7,7 @@
   <!--Important to make the site responsive-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Home - Atlas Anchor Systems</title>
+  <title>Contact - Atlas Anchor Systems</title>
   <link href="style.css" rel="stylesheet">
 
 
@@ -33,7 +33,7 @@
             <a href="inspectorsignin.html">Inspector</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="#">Contact</a>
           </li>
           <li>
             <a href="http://atlas-anchor.com/faq/">FAQ</a>
@@ -50,39 +50,63 @@
 
     <Div class="container">
       <h1 class="text-center">ATLAS ANCHOR SYSTEMS</h1>
-      <div class="box-2">
+      <div class="box-3">
 
         <form action="/action_page.php">
-          <h2 class="text-center">SIGN IN ADMINISTRATOR</h2>
-          <label for="fname">E-mail</label>
-          <input type="email" id="fname" name="firstname" placeholder="Your email..">
+          <h2 class="text-center">CONTACT US</h2>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
           <br>
-          <label for="lname">Password</label>
-          <input type="password" id="lname" name="password" placeholder="enter password..">
-          <div>
-            <a class="forgotpassword" href="Webpage">Forgot Password?</a>
-          </div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           <br>
-          <input type="Submit" value="Sign in">
+          <label for="phonenumber">Phone Number</label>
+          <input type="tel" id="phone" name="phonenumber" placeholder="Your phone number..">
+          <br>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Your email..">
+          <br>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <br>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          <br>
+          <input type="submit" value="Submit">
         </form>
 
       </div>
-      <div class="box-2">
-        <form action="/action_page.php">
-          <h2 class="text-center">SIGN IN AS INSPECTOR</h2>
-          <label for="fname">E-mail</label>
-          <input type="email" id="fname" name="firstname" placeholder="Your email..">
+      <div class="box-1">
+        <div class="contactusbox">
+          <h2>CORPORATE HEAD OFFICE</h2>
+          <p>1618 SE Marine Drive</p>
           <br>
-          <label for="lname">Password</label>
-          <input type="password" id="lname" name="password" placeholder="enter password..">
-          <div>
-            <a class="forgotpassword" href="Webpage">Forgot Password?</a>
-          </div>
+          <p>Vancouver, BC V5P 2R6</p>
           <br>
-          <input type="Submit" value="Sign in">
-        </form>
-
-
+          <p>Canada</p>
+          <br>
+          <p>Tel: 604 435 0008</p>
+          <br>
+          <p>Email: salesbc@atlas-anchor.com</p>
+          <br>
+          <p>Fax: 604 435 0006</p>
+          <br>
+          <h2>ALBERTA BRANCH</h2>
+          <br>
+          <p>8, 2928 18th Street NE</p>
+          <br>
+          <p>Calgary, AB T2E 7B1</p>
+          <br>
+          <p>Canada</p>
+          <br>
+          <p>Tel: 403 210 3699</p>
+          <br>
+          <p>Email: salesab@atlas-anchor.com</p>
+        </div>
       </div>
       <div class="clearfix"></div>
     </Div>

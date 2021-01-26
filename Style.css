@@ -1,4 +1,4 @@
-/* Css for all*/
+/* Css for all-----------------------------------------------*/
 * {
   margin: 0 0;
   padding: 0 0;
@@ -6,7 +6,6 @@
 }
 
 .container {
-/*  border: 1px solid #F50010; */
   width: 80%;
   margin: 0 auto;
   padding: 1%;
@@ -54,7 +53,6 @@ h2 {
 /* css for Navbar section **************************************/
 .logo {
   width: 10%;
-/*  border: 1px solid black; */
   float: left;
 }
 
@@ -78,8 +76,16 @@ h2 {
   background-color: #47B6FF;
 }
 
+.box-1 {
+  
+  width: 33%;
+  float: left;
+  margin: 2%;
+  border-radius: 6px;
+}
+
 .box-3 {
-border: 2px solid #F50010;
+  border: 2px solid #F50010;
   width: 57%;
   float: left;
   margin: 2%;
@@ -87,8 +93,8 @@ border: 2px solid #F50010;
 }
 
 .box-2 {
-    border: 2px solid #F50010;
-  width: 32%;
+  border: 2px solid #F50010;
+  width: 45%;
   float: left;
   margin: 2%;
   border-radius: 6px;
@@ -109,20 +115,20 @@ input[type=text], input[type=tel], input[type=email], input[type=password], sele
 input[type=submit] {
   background-color: #F50010;
   color: white;
-  padding: 2%;
+  padding: 1%;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
   margin-bottom: 0;
 }
 
 input[type=submit]:hover {
-  background-color: #fffff;
+  background-color: #272727;
 }
 
 input[type=login] {
-  background-color:#F50010;
+  background-color: #F50010;
   color: white;
   padding: 2%;
   border: none;
@@ -130,6 +136,10 @@ input[type=login] {
   cursor: pointer;
   text-align: center;
   margin-bottom: 0;
+}
+
+.box-1 form {
+  margin: 3%;
 }
 
 .box-3 form {
@@ -140,20 +150,31 @@ input[type=login] {
   margin: 2%;
 }
 
+/*css for forgotpassword link _______________________________________________*/
+.forgotpassword {
+  color: #272727;
+  padding: 2%;
+  margin: 10px;
+  font-size: 12px;
+}
 
-/*css for social _________________________________________________*/
-.social ul{
+/*css for social media link_________________________________________________*/
+.social ul {
   list-style-type: none;
 }
 
-.social ul li{
+.social ul li {
   display: inline;
   padding: 2%;
 }
 
+/*CSSFOR FOOTER------------------------------------------------------------- */
+.footer{
+  font-weight: bold;
+}
 /* CSS FOR MOBILE SIZE*/
-@media only screen and (max-width:768px){
-  .logo{
+@media only screen and (max-width:768px) {
+  .logo {
     width: 80%;
     float: none;
     margin: 1% auto;
@@ -162,4 +183,85 @@ input[type=login] {
   .menu ul {
     text-align: center;
   }
+
+  .box-3 {
+    width: 90%;
+    margin-bottom: 1% auto;
+  }
+
+  .box-2 {
+    width: 90%;
+    margin-bottom: 1% auto;
+  }
+
+  .social ul li {
+    padding: 5%;
+  }
+
+  .signinform{
+    width: 90%;
+    margin-bottom: 2% auto;
+
+  }
+}
+
+/* CSS for contact us page-------------------------------------------------- */
+
+.contactusbox{
+  margin: 2%;
+}
+
+/* CSS FOR signin LOGIN----------------------------------------------------- */
+.center {
+  width: 70%;
+  margin: 3% auto;
+  position: relative;
+}
+
+.center .header {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  padding: 25px 0 30px 25px;
+  background: #F50010;
+  border-bottom: 1px solid #47B6FF;
+  border-radius: 5px 5px 0 0;
+}
+
+.center form {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 50px 10px 20px 30px;
+  box-sizing: border-box;
+  border: 1px solid #47B6FF;
+  border-radius: 0 0 5px 5px;
+}
+
+form input {
+  height: 50px;
+  width: 90%;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+  font-size: 18px;
+  outline: none;
+}
+
+form input[type="password"] {
+  margin-top: 20px;
+}
+
+form i {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  margin: 15px 0 0 -45px;
+}
+
+form a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #47B6FF;
+  padding: 0 0 0 20px;
 }
