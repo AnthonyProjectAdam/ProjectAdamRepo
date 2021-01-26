@@ -2,11 +2,11 @@
 * {
   margin: 0 0;
   padding: 0 0;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
-  border: 1px solid #F50010;
+/*  border: 1px solid #F50010; */
   width: 80%;
   margin: 0 auto;
   padding: 1%;
@@ -26,7 +26,7 @@
 }
 
 a {
-  color: #090C9B;
+  color: #47B6FF;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-  color: #090C9B;
+  color: #272727;
   font-weight: bold;
   margin: 2%;
   font-family: Verdana, sans-serif;
@@ -54,7 +54,7 @@ h2 {
 /* css for Navbar section **************************************/
 .logo {
   width: 10%;
-  border: 1px solid black;
+/*  border: 1px solid black; */
   float: left;
 }
 
@@ -68,18 +68,18 @@ h2 {
 
 .menu ul li {
   display: inline;
-  padding: 2%;
+  padding: 1%;
   font-weight: bold;
 }
 
 /*css for mainbody _________________________________________________*/
 .mainbody {
   padding: 1% 0;
-  background-color: #DDDDDD;
+  background-color: #47B6FF;
 }
 
 .box-3 {
-  border: 1px solid #F50010;
+border: 2px solid #F50010;
   width: 57%;
   float: left;
   margin: 2%;
@@ -87,7 +87,7 @@ h2 {
 }
 
 .box-2 {
-  border: 1px solid #F50010;
+    border: 2px solid #F50010;
   width: 32%;
   float: left;
   margin: 2%;
@@ -98,7 +98,7 @@ h2 {
 input[type=text], input[type=tel], input[type=email], input[type=password], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #272727;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -107,7 +107,7 @@ input[type=text], input[type=tel], input[type=email], input[type=password], sele
 }
 
 input[type=submit] {
-  background-color: #090C9B;
+  background-color: #F50010;
   color: white;
   padding: 2%;
   border: none;
@@ -118,11 +118,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #090C9B;
+  background-color: #fffff;
 }
 
 input[type=login] {
-  background-color: #090C9B;
+  background-color:#F50010;
   color: white;
   padding: 2%;
   border: none;
@@ -148,5 +148,18 @@ input[type=login] {
 
 .social ul li{
   display: inline;
-  padding: 1%;
+  padding: 2%;
+}
+
+/* CSS FOR MOBILE SIZE*/
+@media only screen and (max-width:768px){
+  .logo{
+    width: 80%;
+    float: none;
+    margin: 1% auto;
+  }
+
+  .menu ul {
+    text-align: center;
+  }
 }
