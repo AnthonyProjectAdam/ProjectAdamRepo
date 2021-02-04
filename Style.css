@@ -2,7 +2,7 @@
 * {
   margin: 0 0;
   padding: 0 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .container {
@@ -25,12 +25,12 @@
 }
 
 a {
-  color: #47B6FF;
+  color: #272727;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F50010;
+  color: #47B6FF;
 }
 
 .text-center {
@@ -40,14 +40,14 @@ a:hover {
 h1 {
   color: #F50010;
   font-weight: bolder;
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 h2 {
   color: #272727;
   font-weight: bold;
   margin: 2%;
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* css for Navbar section **************************************/
@@ -70,22 +70,18 @@ h2 {
   font-weight: bold;
 }
 
+.menu ul li .current{
+  background-color:#F50010;
+}
+
 /*css for mainbody _________________________________________________*/
 .mainbody {
   padding: 1% 0;
-  background-color: #47B6FF;
+  background-color: #Ffff;
 }
 
 .box-1 {
   width: 33%;
-  float: left;
-  margin: 2%;
-  border-radius: 6px;
-}
-
-.box-3 {
-  border: 2px solid #F50010;
-  width: 57%;
   float: left;
   margin: 2%;
   border-radius: 6px;
@@ -99,8 +95,16 @@ h2 {
   border-radius: 6px;
 }
 
+.box-3 {
+  border: 2px solid #F50010;
+  width: 57%;
+  float: left;
+  margin: 2%;
+  border-radius: 6px;
+}
+
 /*css for client contact form and login form **********************************/
-input[type=text], input[type=tel], input[type=email], input[type=password], select, textarea {
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=button],select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #272727;
@@ -123,7 +127,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #272727;
+  background-color: #47B6FF;
 }
 
 input[type=login] {
@@ -135,6 +139,21 @@ input[type=login] {
   cursor: pointer;
   text-align: center;
   margin-bottom: 0;
+}
+
+input[type=button] {
+  background-color: #F50010;
+  color: white;
+  padding: 5%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input[type=button]:hover {
+  background-color: #47B6FF;
 }
 
 .box-1 form {
@@ -170,6 +189,7 @@ input[type=login] {
 /*CSSFOR FOOTER------------------------------------------------------------- */
 .footer {
   font-weight: bold;
+background-color: #47B6FF;
 }
 
 /* CSS FOR MOBILE SIZE*/
@@ -278,11 +298,68 @@ form a {
 }
 *?
 
-/* ---------css for box 4 in Administrator page */
+/* ---------css for box 4 in Administrator & Inspector page */
 .box-4 {
-  background-color: #F50010;
+  background-color: #c1c1c1;
   width: 95%;
+  float: left;
+  margin: 1% 2% 1% 2%;
+  border-radius: 6px;
+}
+
+.box-5 input {
+  display: inline;
+  background-color: #F50010;
+  width: 35%;
+  float: left;
+  margin: 1% 1% 0% 1%;
+  border-radius: 6px;
+}
+
+.box-6 {
+  width: 25%;
   float: left;
   margin: 2%;
   border-radius: 6px;
+}
+
+/* CSS For tabs------------------------ */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #47B6FF;
+}
+
+.tab:hover {
+  background-color: #47B6FF;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
