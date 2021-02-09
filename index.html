@@ -7,10 +7,10 @@
   <!--Important to make the site responsive-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ATLAS ANCHOR SYSTEMS</title>
-
-<link href="style.css" rel="stylesheet">
-
+  <title>Home - Atlas Anchor Systems</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,19 +22,22 @@
       <Div class="logo">
         <img src="images/AtlasImage.png" alt="Atlas Anchor Systems logo" class="img-responsive">
       </Div>
-      <div class="menu text-right">
+      <div class="menu text-right ">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a class ="current" href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">Administrators</a>
+            <a href="administrator.html">Administrator</a>
           </li>
           <li>
-            <a href="#">Inspectors/Engineers</a>
+            <a href="inspector.html">Inspector</a>
           </li>
           <li>
-            <a href="#">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="http://atlas-anchor.com/faq/">FAQ</a>
           </li>
         </ul>
       </div>
@@ -48,47 +51,39 @@
 
     <Div class="container">
       <h1 class="text-center">ATLAS ANCHOR SYSTEMS</h1>
-      <div class="box-3">
+      <div class="box-2">
 
         <form action="/action_page.php">
-          <h2 class="text-center">CONTACT US</h2>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <h2 class="text-center">SIGN IN ADMINISTRATOR</h2>
+          <label for="fname">E-mail</label>
+          <input type="email" id="fname" name="firstname" placeholder="Your email..">
           <br>
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Password</label>
+          <input type="password" id="lname" name="password" placeholder="enter password..">
+          <div>
+            <a class="forgotpassword" href="Webpage">Forgot Password?</a>
+          </div>
           <br>
-          <label for="phonenumber">Phone Number</label>
-          <input type="tel" id="phone" name="phonenumber" placeholder="Your phone number..">
-          <br>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Your email..">
-          <br>
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-          <br>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-          <br>
-          <input type="submit" value="Submit">
+          <input type="Submit" value="Sign in">
         </form>
 
       </div>
       <div class="box-2">
         <form action="/action_page.php">
-          <h2 class="text-center">INSPECTOR/ENGINEER LOGIN</h2>
-          <label for="fname">First Name</label>
+          <h2 class="text-center">SIGN IN AS INSPECTOR</h2>
+          <label for="fname">E-mail</label>
           <input type="email" id="fname" name="firstname" placeholder="Your email..">
           <br>
-          <label for="lname">Last Name</label>
+          <label for="lname">Password</label>
           <input type="password" id="lname" name="password" placeholder="enter password..">
+          <div>
+            <a class="forgotpassword" href="Webpage">Forgot Password?</a>
+          </div>
           <br>
-          <input type="login" value="login">
+          <input type="Submit" value="Sign in">
         </form>
+
+
       </div>
       <div class="clearfix"></div>
     </Div>
@@ -100,13 +95,13 @@
     <Div class="container text-center">
       <ul>
         <li>
-          <a href="Webpage"><img src="https://img.icons8.com/fluent/48/000000/home.png"/></a>
+          <a href="Webpage"><img src="https://img.icons8.com/fluent/48/000000/home.png" /></a>
         </li>
         <li>
-          <a href="Socialmedia"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
+          <a href="Socialmedia"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
         </li>
         <li>
-          <a href="Socialmedia"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+          <a href="Socialmedia"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
         </li>
       </ul>
     </Div>

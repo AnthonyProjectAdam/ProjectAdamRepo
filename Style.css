@@ -1,12 +1,11 @@
-/* Css for all*/
+/* Css for all-----------------------------------------------*/
 * {
   margin: 0 0;
   padding: 0 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .container {
-/*  border: 1px solid #F50010; */
   width: 80%;
   margin: 0 auto;
   padding: 1%;
@@ -26,12 +25,12 @@
 }
 
 a {
-  color: #47B6FF;
+  color: #272727;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F50010;
+  color: #47B6FF;
 }
 
 .text-center {
@@ -41,20 +40,19 @@ a:hover {
 h1 {
   color: #F50010;
   font-weight: bolder;
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 h2 {
   color: #272727;
   font-weight: bold;
   margin: 2%;
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* css for Navbar section **************************************/
 .logo {
   width: 10%;
-/*  border: 1px solid black; */
   float: left;
 }
 
@@ -72,30 +70,41 @@ h2 {
   font-weight: bold;
 }
 
+.menu ul li .current{
+  background-color:#F50010;
+}
+
 /*css for mainbody _________________________________________________*/
 .mainbody {
   padding: 1% 0;
-  background-color: #47B6FF;
+  background-color: #Ffff;
 }
 
-.box-3 {
-border: 2px solid #F50010;
-  width: 57%;
+.box-1 {
+  width: 33%;
   float: left;
   margin: 2%;
   border-radius: 6px;
 }
 
 .box-2 {
-    border: 2px solid #F50010;
-  width: 32%;
+  border: 2px solid #F50010;
+  width: 45%;
+  float: left;
+  margin: 2%;
+  border-radius: 6px;
+}
+
+.box-3 {
+  border: 2px solid #F50010;
+  width: 57%;
   float: left;
   margin: 2%;
   border-radius: 6px;
 }
 
 /*css for client contact form and login form **********************************/
-input[type=text], input[type=tel], input[type=email], input[type=password], select, textarea {
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=button],select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #272727;
@@ -109,20 +118,20 @@ input[type=text], input[type=tel], input[type=email], input[type=password], sele
 input[type=submit] {
   background-color: #F50010;
   color: white;
-  padding: 2%;
+  padding: 1%;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
   margin-bottom: 0;
 }
 
 input[type=submit]:hover {
-  background-color: #fffff;
+  background-color: #47B6FF;
 }
 
 input[type=login] {
-  background-color:#F50010;
+  background-color: #F50010;
   color: white;
   padding: 2%;
   border: none;
@@ -132,6 +141,25 @@ input[type=login] {
   margin-bottom: 0;
 }
 
+input[type=button] {
+  background-color: #F50010;
+  color: white;
+  padding: 5%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input[type=button]:hover {
+  background-color: #47B6FF;
+}
+
+.box-1 form {
+  margin: 3%;
+}
+
 .box-3 form {
   margin: 2%;
 }
@@ -139,34 +167,34 @@ input[type=login] {
 .box-2 form {
   margin: 2%;
 }
-/* layout for Administrators page mainbody2*/
-.mainbody2 {
-  padding: 1% 0;
-  background-color: #F8F8FF;
+
+/*css for forgotpassword link _______________________________________________*/
+.forgotpassword {
+  color: #272727;
+  padding: 2%;
+  margin: 10px;
+  font-size: 12px;
 }
 
-/*css for social _________________________________________________*/
-div.fixed{
-  position:fixed;
-  bottom:0;
-  right:0;
-  width:100%;
-
-}
-.social ul{
+/*css for social media link_________________________________________________*/
+.social ul {
   list-style-type: none;
-
-
 }
 
-.social ul li{
+.social ul li {
   display: inline;
   padding: 2%;
 }
 
+/*CSSFOR FOOTER------------------------------------------------------------- */
+.footer {
+  font-weight: bold;
+background-color: #47B6FF;
+}
+
 /* CSS FOR MOBILE SIZE*/
-@media only screen and (max-width:768px){
-  .logo{
+@media only screen and (max-width:768px) {
+  .logo {
     width: 80%;
     float: none;
     margin: 1% auto;
@@ -175,11 +203,89 @@ div.fixed{
   .menu ul {
     text-align: center;
   }
-}
-.footer{
 
+  .box-3 {
+    width: 90%;
+    margin-bottom: 1% auto;
+  }
+
+  .box-2 {
+    width: 90%;
+    margin-bottom: 1% auto;
+  }
+
+  .social ul li {
+    padding: 5%;
+  }
+
+  .signinform {
+    width: 90%;
+    margin-bottom: 2% auto;
+  }
 }
+
+/* CSS for contact us page-------------------------------------------------- */
+.contactusbox {
+  margin: 2%;
+}
+
+/* CSS FOR signin LOGIN----------------------------------------------------- */
+.center {
+  width: 70%;
+  margin: 3% auto;
+  position: relative;
+}
+
+.center .header {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  padding: 25px 0 30px 25px;
+  background: #F50010;
+  border-bottom: 1px solid #47B6FF;
+  border-radius: 5px 5px 0 0;
+}
+
+.center form {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 50px 10px 20px 30px;
+  box-sizing: border-box;
+  border: 1px solid #47B6FF;
+  border-radius: 0 0 5px 5px;
+}
+
+form input {
+  height: 50px;
+  width: 90%;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+  font-size: 18px;
+  outline: none;
+}
+
+form input[type="password"] {
+  margin-top: 20px;
+}
+
+form i {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  margin: 15px 0 0 -45px;
+}
+
+form a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #47B6FF;
+  padding: 0 0 0 20px;
+}
+
 /* css for buttonone and buttonetwo*/
+/*
 .bigbuttons{
   background-color: #F50010;
   color: white;
@@ -190,12 +296,86 @@ div.fixed{
   text-align: center;
   margin-bottom: 0;
 }
+*?
 
-/* ---------css for box 4 in Administrator page */
-.box-4{
+/* ---------css for box 4 in Administrator & Inspector page */
+.box-4 {
+  background-color: #c1c1c1;
+  width: 95%;
+  float: left;
+  margin: 1% 2% 1% 2%;
+  border-radius: 6px;
+}
 
-    width: 90%;
-    float: left;
-    margin: 2%;
-    border-radius: 6px;
+.box-5 input {
+  display: inline;
+  background-color: #F50010;
+  width: 35%;
+  float: left;
+  margin: 1% 1% 0% 1%;
+  border-radius: 6px;
+}
+
+.box-6 {
+  width: 25%;
+  float: left;
+  margin: 2%;
+  border-radius: 6px;
+}
+
+/* CSS For tabs------------------------ */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #47B6FF;
+}
+
+.tab:hover {
+  background-color: #47B6FF;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
