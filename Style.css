@@ -24,6 +24,10 @@
   float: none;
 }
 
+th, td {
+  padding: 15px;
+}
+
 a {
   color: #272727;
   text-decoration: none;
@@ -307,21 +311,16 @@ form a {
   border-radius: 6px;
 }
 
-.box-5 input {
+.box-5 {
   display: inline;
   background-color: #F50010;
-  width: 35%;
+  width: 95%;
   float: left;
-  margin: 1% 1% 0% 1%;
+  margin: 1% 1% 1% 1%;
   border-radius: 6px;
 }
 
-.box-6 {
-  width: 25%;
-  float: left;
-  margin: 2%;
-  border-radius: 6px;
-}
+
 
 /* CSS For tabs------------------------ */
 [data-tab-content] {
