@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['Employee_Email']) || $_SESSION['Employee_kind'] !== 'Engineer') {
+  header("location:index.php");
+}
+
+
+?>
 <!doctype html>
 
 <html lang="en">
@@ -22,25 +31,28 @@
   <section class="Navbar">
     <Div class="container">
       <Div class="logo">
-        <img src="images/AtlasImage.png" alt="Atlas Anchor Systems logo" class="img-responsive">
+        <a href="index.php">
+          <img src="images/AtlasImage.png" alt="Atlas Anchor Systems logo" class="img-responsive"></a>
       </Div>
       <div class="menu text-right">
         <ul>
+          <!-- <li>
+            <a href="index.php">Home</a>
+          </li>
+          
           <li>
-            <a href="index.html">Home</a>
+            <a href="login.php">Administrators</a>
           </li>
           <li>
-            <a href="adminsignin.html">Administrators</a>
+            <a href="inspector.php">Inspectors</a>
           </li>
           <li>
-            <a  href="inspectorsignin.html">Inspectors</a>
-          </li>
-          <li>
-            <a class="current"href="engineer.html">Engineer</a>
+            <a class="current" href="engineer.php">Engineer</a>
           </li>
           <li>
             <a href="http://atlas-anchor.com/faq/">FAQ</a>
           </li>
+          -->
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -50,30 +62,25 @@
 
   <!--Body starts here-->
   <section class="mainbody2">
-<h1 class="text-center">ENGINEER</h1>
-    <div class="box-2">
-      <form action="/action_page.php">
+    <h1 class="text-center">ENGINEER</h1>
+    <div class="box-2" width="100%">
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname">
-        <br>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname">
-        <br>
-        <label for="phonenumber">Phone Number</label>
-        <input type="tel" id="phone" name="phonenumber">
-        <br>
-        <label for="email">Employee Type</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
-      </form>
+      <table border="3" style=" width:100%">
+        <tr>
+          <th>Email</th>
+          <td><?= "$_SESSION[Employee_Email]" ?></td>
+        </tr>
+
+        <tr>
+          <th>Employe Type</th>
+          <td><?= "$_SESSION[Employee_kind]" ?></td>
+        </tr>
+      </table>
     </div>
-
     <div class="box-1">
 
       <a href="editprofile.html"><input type="button" value="EDIT MY PROFILE"></a>
+      <a href="logout.php"><input type="button" value="LOG OUT"></a>
 
     </div>
     <div>
