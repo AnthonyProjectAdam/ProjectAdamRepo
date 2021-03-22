@@ -33,7 +33,7 @@
             <a href="adminsignin.html">Administrators</a>
           </li>
           <li>
-            <a class="current" href="inspectorsignin.html">Inspectors</a>
+            <a  href="inspectorsignin.html">Inspectors</a>
           </li>
           <li>
             <a href="engineer.html">Engineer</a>
@@ -63,19 +63,21 @@
         <label for="phonenumber">Phone Number</label>
         <input type="tel" id="phone" name="phonenumber">
         <br>
-        <label for="email">Employee Type</label>
-        <input type="email" id="email" name="email">
+       <label for="password">Employee Password</label>
+        <input type="password" id="password" name="password">
         <br>
+		<!-- 
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email"> -->
+		    <div class="box-1">
+
+      <a href="#"><input type="button" value="SAVE MY PROFILE"></a>
+
+    </div>
       </form>
     </div>
 
-    <div class="box-1">
 
-      <a href="#"><input type="button" value="EDIT MY PROFILE"></a>
-
-    </div>
     <div>
       <div class="clearfix"></div>
     </Div>
@@ -86,7 +88,7 @@
 
 
     <!-- Begining of button section  -->
-
+<!--
     <div class="box-4">
       <div class="box-5">
         <p> bttons and filter</p>
@@ -98,7 +100,7 @@
         <p> PHP TABLE</p>
       </div>
     </div>
-
+-->
     <div>
       <div class="clearfix"></div>
     </Div>

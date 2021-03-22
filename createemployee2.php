@@ -26,21 +26,29 @@
       </Div>
       <div class="menu text-right">
         <ul>
+          <!--
           <li>
             <a href="index.html">Home</a>
           </li>
+-->
           <li>
-            <a href="adminsignin.html">Administrators</a>
+            <a href="administrator.php">ADMINISTRATOR</a>
           </li>
           <li>
-            <a class="current" href="inspectorsignin.html">Inspectors</a>
+            <a href="employee.php">EMPLOYEE PORTAL</a>
           </li>
+          <!--
+          <li>
+            <a href="inspectorsignin.html">Inspectors</a>
+          </li>
+
           <li>
             <a href="engineer.html">Engineer</a>
           </li>
           <li>
             <a href="http://atlas-anchor.com/faq/">FAQ</a>
           </li>
+          -->
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -51,11 +59,40 @@
   <!--Body starts here-->
   <section class="mainbody2">
 
-    <div class="box-1">
+    <div class="box-2">
+      <form action="/action_page.php" medthod="POST">
 
-      <a href="createemployee.html"><input type="button" value="CREATE EMPLOYEE"></a>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname">
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname">
+        <br>
+        <label for="phonenumber">Phone Number</label>
+        <input type="tel" id="phone" name="phonenumber">
+        <br>
+        <label for="Employee_kind">Choose Employee Role:</label>
+        <select name="Employee_kind">
+          <option value="Admin">Admin</option>
+          <option value="Inspector">Inspector</option>
+          <option value="Engineer">Engineer</option>
+        </select>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password">Employee Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <div class="box-1">
 
+          <a href="#"><input type="button" value="CREATE PROFILE"></a>
+
+        </div>
+      </form>
     </div>
+
+
     <div>
       <div class="clearfix"></div>
     </Div>
@@ -67,54 +104,7 @@
 
     <!-- Begining of button section  -->
 
-    <div class="box-4">
-      <div class="box-5">
-        <p> bttons and filter</p>
-      </div>
-      <div>
-        <div class="clearfix"></div>
-      </Div>
-      <div class="card">
-        <table border="2px solid">
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-    <tr>
-      <td>Ernst Handel</td>
-      <td>Roland Mendel</td>
-      <td>Austria</td>
-    </tr>
-    <tr>
-      <td>Island Trading</td>
-      <td>Helen Bennett</td>
-      <td>UK</td>
-    </tr>
-    <tr>
-      <td>Laughing Bacchus Winecellars</td>
-      <td>Yoshi Tannamuri</td>
-      <td>Canada</td>
-    </tr>
-    <tr>
-      <td>Magazzini Alimentari Riuniti</td>
-      <td>Giovanni Rovelli</td>
-      <td>Italy</td>
-    </tr>
-  </table>
 
-      </div>
-    </div>
 
     <div>
       <div class="clearfix"></div>
